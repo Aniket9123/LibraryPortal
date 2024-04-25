@@ -1,0 +1,38 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model LibraryPortal.Web.Models.AddBooks
+
+
+<form method="post">
+ <div class="container">
+
+<h1> Add Book</h1>
+<div class="input-group mb-3">
+    <span class="input-group-text" id="inputGroup-sizing-default">Author</span>
+    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" asp-for="Author"/>
+</div>
+
+<div class="input-group mb-3">
+    <span class="input-group-text" id="inputGroup-sizing-default">Title</span>
+    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" asp-for="Title"/>
+</div>
+
+<div class="input-group mb-3">
+    <span class="input-group-text" id="inputGroup-sizing-default">Name</span>
+    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" asp-for="Name"/>
+</div>
+
+<div class="input-group mb-3">
+    <span class="input-group-text" id="inputGroup-sizing-default">PhoneNo</span>
+    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" asp-for="PhoneNo"/>
+</div>
+
+<div class="mt-3">
+    <button type="submit" class="btn btn-success">Add</button>
+</div>
+</div>
+</form>
